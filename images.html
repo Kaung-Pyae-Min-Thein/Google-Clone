@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>Image Search</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,25 +20,28 @@
     <!--navbar-->
 
     <div class="d-flex  p-4 justify-content-end align-items-center">
-        <a href="images.html" class="text-decoration-none me-5 text-muted">Google Image Search</a>
-        <a href="advance.html" class="text-decoration-none text-muted">Google Advanced Search</a>
+        <a href="index.html" class="text-decoration-none text-muted">Google Search</a>
     </div>
 
     <!--content-->
     <div id="logo" class="d-flex justify-content-center">
         <img src="/image/googlelogo.png" alt="googlelogo">
+        <p id="imageText" class="fs-4 text-primary">images</p>
+
     </div>
     <!--form-->
     <form action="https://google.com/search">
         <!--input-->
         <div id="textInput" class="container py-3 my-4 d-flex align-items-center  border border-2 rounded-pill">
             <i class="bi bi-search ms-2  me-4 text-muted"></i>
+            <!--Trick of image search-->
+            <input type="hidden" name="tbm" value="isch">
+            <!---->
             <input class="border-0 input-fluid" autofocus autocomplete="off" autocorrect="off" spellcheck="false"
                 maxlength="2048" type="text" name="q">
         </div>
         <div class="d-flex justify-content-center mt-4">
-            <input class="me-4 fs-5 btn btn-light" type="submit" value="Google Search">
-            <input class="fs-5 btn btn-light" type="submit" name="btnI" value="I'm feeling Lucky">
+            <input class="btn btn-light" type="submit" value="Image Search">
         </div>
 
 
